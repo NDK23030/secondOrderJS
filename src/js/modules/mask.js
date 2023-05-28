@@ -43,7 +43,8 @@ const mask = (selector) => {
 
     inputs.forEach(input => {
         input.addEventListener('input', maskNumber);
-        input.addEventListener('keypress', maskNumber);
+        // input.addEventListener('keypress', maskNumber);
+        input.addEventListener('click', maskNumber);
         input.addEventListener('focus', maskNumber);
         input.addEventListener('blur', maskNumber);
     });
